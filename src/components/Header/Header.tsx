@@ -38,7 +38,7 @@ const renderAdminSpeaker = ({ onClose, left, top, className }: any, ref) => {
         <Dropdown.Item>Sign out</Dropdown.Item>
         <Dropdown.Item
           icon={<HelpOutlineIcon />}
-          href="https://rsuitejs.com"
+          href="https://rsuitejs.com/guide/introduction/"
           target="_blank"
           as="a"
         >
@@ -76,19 +76,19 @@ const renderSettingSpeaker = ({ onClose, left, top, className }: any, ref) => {
 
 const renderNoticeSpeaker = ({ onClose, left, top, className }: any, ref) => {
   const notifications = [
-    [
-      '7 hours ago',
-      'The charts of the dashboard have been fully upgraded and are more visually pleasing.'
-    ],
-    [
-      '13 hours ago',
-      'The function of virtualizing large lists has been added, and the style of the list can be customized as required.'
-    ],
-    ['2 days ago', 'Upgraded React 18 and Webpack 5.'],
-    [
-      '3 days ago',
-      'Upgraded React Suite 5 to support TypeScript, which is more concise and efficient.'
-    ]
+    // [
+    //   '7 hours ago',
+    //   'lorem ipsum '
+    // ],
+    // [
+    //   '13 hours ago',
+    //   'The function of virtualizing large lists has been added, and the style of the list can be customized as required.'
+    // ],
+    // ['2 days ago', 'Upgraded React 18 and Webpack 5.'],
+    // [
+    //   '3 days ago',
+    //   'Upgraded React Suite 5 to support TypeScript, which is more concise and efficient.'
+    // ]
   ];
 
   return (
@@ -119,21 +119,21 @@ const Header = () => {
 
   return (
     <Stack className="header" spacing={8}>
-      <IconButton
+      {/* <IconButton
         icon={<HeartIcon style={{ fontSize: 20 }} color="red" />}
         href="https://opencollective.com/rsuite"
         target="_blank"
-      />
+      /> */}
       <IconButton
         icon={<GithubIcon style={{ fontSize: 20 }} />}
-        href="https://github.com/rsuite/rsuite-admin-template"
+        href="https://github.com/trakwell-ai"
         target="_blank"
       />
 
       <Whisper placement="bottomEnd" trigger="click" ref={trigger} speaker={renderNoticeSpeaker}>
         <IconButton
           icon={
-            <Badge content={5}>
+            <Badge content={0}>
               <NoticeIcon style={{ fontSize: 20 }} />
             </Badge>
           }
@@ -148,7 +148,7 @@ const Header = () => {
         <Avatar
           size="sm"
           circle
-          src="https://avatars.githubusercontent.com/u/1203827"
+          src="https://ionicframework.com/docs/img/demos/avatar.svg"
           alt="@simonguo"
           style={{ marginLeft: 8 }}
         />

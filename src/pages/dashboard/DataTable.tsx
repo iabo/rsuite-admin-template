@@ -6,42 +6,42 @@ const { Column, HeaderCell, Cell } = Table;
 const data = [
   {
     id: 1,
-    url: 'https://rsuitejs.com',
+    url: '1331',
     visits: '105,253',
     unique: '23,361',
     bounce: '11%'
   },
   {
     id: 2,
-    url: 'https://rsuitejs.com/components/overview/',
+    url: '1324',
     visits: '103,643',
     unique: '23,385',
     bounce: '17%'
   },
   {
     id: 3,
-    url: 'https://rsuitejs.com/components/table/',
+    url: '1352',
     visits: '140,013',
     unique: '41,256',
     bounce: '13%'
   },
   {
     id: 4,
-    url: 'https://rsuitejs.com/components/drawer/',
+    url: '1365',
     visits: '194,532',
     unique: '19,038',
     bounce: '18%'
   },
   {
     id: 5,
-    url: 'https://rsuitejs.com/guide/usage/',
+    url: '1338',
     visits: '26,353',
     unique: '1,000',
     bounce: '20%'
   },
   {
     id: 6,
-    url: 'https://rsuitejs.com/guide/customization/',
+    url: '1339',
     visits: '11,973',
     unique: '4,786',
     bounce: '24%'
@@ -50,10 +50,10 @@ const data = [
 
 const DataTable = () => {
   return (
-    <Panel className="card" header="Most Visited Pages">
+    <Panel className="card" header="Demo Table">
       <Table height={300} data={data} rowKey="id">
         <Column flexGrow={1} minWidth={100}>
-          <HeaderCell>PAGE NAME </HeaderCell>
+          <HeaderCell>Field1 </HeaderCell>
           <Cell>
             {rowData => {
               return (
@@ -66,17 +66,17 @@ const DataTable = () => {
         </Column>
 
         <Column width={130}>
-          <HeaderCell>VISITORS</HeaderCell>
+          <HeaderCell>Field 2</HeaderCell>
           <Cell dataKey="visits" />
         </Column>
 
         <Column width={100}>
-          <HeaderCell>UNIQUE</HeaderCell>
+          <HeaderCell>Field 3</HeaderCell>
           <Cell dataKey="unique" />
         </Column>
 
         <Column width={130}>
-          <HeaderCell>BOUNCE RATE</HeaderCell>
+          <HeaderCell>Field 4</HeaderCell>
           <Cell dataKey="bounce" />
         </Column>
       </Table>

@@ -21,7 +21,7 @@ const Calendar = () => {
 
   return (
     <PageContent className="calendar-app">
-      <FullCalendar
+      {/* <FullCalendar
         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
         headerToolbar={{
           left: 'prev,next today',
@@ -39,7 +39,7 @@ const Calendar = () => {
         select={handleDateSelect}
         eventContent={renderEventContent} // custom render function
         eventClick={handleEventClick}
-      />
+      /> */}
       <EventModal
         open={editable}
         onClose={() => setEditable(false)}

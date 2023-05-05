@@ -6,9 +6,9 @@ const Copyright = () => {
     <Stack className="copyright" justifyContent="center" style={{ height: 40, marginTop: 20 }}>
       <div className="container">
         <p>
-          © 2022, Made with ❤️ by{' '}
-          <a href="https://github.com/rsuite/rsuite" target="_blank" rel="noreferrer">
-            RSUITE
+          © 2022, Copyright{' '}
+          <a href="https://github.com/trakwell-ai" target="_blank" rel="noreferrer">
+            Trakwell.ai
           </a>
         </p>
       </div>
